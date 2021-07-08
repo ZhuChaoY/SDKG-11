@@ -18,7 +18,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **ConvKB.py** :  A ConvKB model attaching category and description annotation.  
 **KGE.py** : A class of processing and tool functions for Knowledge Graph Embedding.  
 **Tokenization.py** : A tokenization function of BERT and BioBERT.  
-**Optimization.py** : A training optimization of BERT and BioBERT. 
+**Optimization.py** : A training optimization of BERT and BioBERT.  
 **Train_D_Table.py** : A training function for description table.  
 **Train_Disambiguation.py** : A training function for disambiguation step.  
 **PathwayCommons.py** : A training function for PathwayCommons classification.  
