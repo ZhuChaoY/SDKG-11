@@ -12,10 +12,14 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
 **1** Generic Cancer
 
-### Model/
+### Model/ 
+**TransE.py** :  A TransE model attaching category and description annotation.   
+**TransH.py** :  A TransH model attaching category and description annotation.   
+**ConvKB.py** :  A ConvKB model attaching category and description annotation.  
 **KGE.py** : A class of processing and tool functions for Knowledge Graph Embedding.  
 **Tokenization.py** : A tokenization function of BERT and BioBERT.  
-**Optimization.py** : A training optimization of BERT and BioBERT.  
-**TransE.py** :  
+**Optimization.py** : A training optimization of BERT and BioBERT. 
+
+
 
 
