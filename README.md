@@ -23,6 +23,12 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Train_Disambiguation.py** : A training function for disambiguation step.  
 **PathwayCommons.py** : A training function for PathwayCommons classification.  
 
+### MBI/PathwayCommons/  
+**train.csv**  
+**dev.csv**  
+**test.csv**  
+**entity.csv**  
+
 # Operating Instructions
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.  
 (2) Run TransE.py or TransH.py or ConvKB.py, modify the args dict in main() function first.  
