@@ -25,7 +25,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 # Operating Instructions
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.  
-(2) Run TransE.py or TransH.py or ConvKB.py, modify the args dict in mian function first.  
+(2) Run TransE.py or TransH.py or ConvKB.py, modify the args dict in main() function first.  
 (3) Run PathwayCommons.py to evaluate on PathwayCommons dataset.  
 
 
