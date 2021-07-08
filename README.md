@@ -1,5 +1,5 @@
 # KGE-SDKG
-Multimodal reasoning based on knowledge graph embedding for specific diseases
+Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 Motivation: Knowledge Graph (KG) is becoming increasingly important in the biomedical field. In addition to being a way of knowledge storage, KG can also provide a valuable reference for disciplinary research. Deriving new and reliable knowledge from existing knowledge by knowledge graph embedding technology is a popular method. Some add a variety of additional information to aid reasoning, namely multimodal reasoning. However, most of the existing biomedical KGs are constructed around an entity type, and they rarely focus on one specific disease.
 
