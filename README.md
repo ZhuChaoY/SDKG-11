@@ -8,8 +8,11 @@ Results: We propose a complete Specific Disease Knowledge Graph (SDKG) construct
 
 # Files
 KGE.py          : A class of processing and tool functions for Knowledge Graph Embedding. 
+
 Tokenization.py : A tokenization function of BERT and BioBERT. 
+
 Optimization.py : A training optimization of BERT and BioBERT. 
+
 TransE.py       :  
 
 
