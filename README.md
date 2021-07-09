@@ -19,22 +19,16 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **KGE.py** : A class of processing and tool functions for Knowledge Graph Embedding.  
 **Tokenization.py** : A tokenization function of BERT and BioBERT.  
 **Optimization.py** : A training optimization of BERT and BioBERT.  
-**Train_D_Table.py** : A training function for description table.  
-**PathwayCommons.py** : A training function for PathwayCommons classification.  
+**Train_D_Table.py** : A training function for description table.   
 **C&D/** : Category table and Description table (Run Train_D_Table.py to get).   
 **Bert** : BERT parameters, self download in https://github.com/google-research/bert.     
 **Biobert** : BioBERT parameters, self download in https://github.com/dmis-lab/biobert.    
 
-### MBI/PathwayCommons/  
-**train.csv**  
-**dev.csv**  
-**test.csv**  
-**entity.csv**  
 
 # Operating Instructions
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.  
 (2) Run TransE.py or TransH.py or ConvKB.py, modify the args dict in main() function first.  
-(3) Run PathwayCommons.py to evaluate on PathwayCommons dataset.  
+
 
 
 
