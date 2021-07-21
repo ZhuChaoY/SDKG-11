@@ -2,6 +2,7 @@ import os
 import re
 import timeit
 import random
+import argparse
 import numpy as np
 import pandas as pd
 import tensorflow as tf 
@@ -20,7 +21,7 @@ class Train_D_Table():
         (3) Construct bioBERT model.
         """
         
-        for key, value in args.items():
+        for key, value in dict(args._get_kwargs()).items():
             exec('self.{} = {}'.format(key, value))
             
         self.out_dir = 'C&D/'
@@ -326,26 +327,30 @@ def layer_norm(inputs):
            begin_norm_axis = -1, begin_params_axis = -1) 
         
 
-def main():
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-    os.environ['CUDA_VISIBLE_DEVICES'] = '3' 
-    config = tf.ConfigProto() 
-    config.gpu_options.allow_growth = True
 
-    args = \
-        {'len_d'      : 128,
-         'epoches'    : 5,
-         'batch_size' : 8,
-         'l_r'        : 1e-5,
-         'do_train'   : True,
-         'do_predict' : True}
+parser = argparse.ArgumentParser(description = 'Train_D_table')
+
+parser.add_argument('--len_d', type = str, default = 128,
+                    help = 'length of the text') 
+parser.add_argument('--l_r', type = float, default = 1e-5, 
+                    help = 'learning rate')
+parser.add_argument('--batch_size', type = int, default = 8,
+                    help = 'batch size for SGD')
+parser.add_argument('--epoches', type = int, default = 5,
+                    help = 'training epoches')
+parser.add_argument('--do_train', type = bool, default = True,
+                    help = 'whether to train')
+parser.add_argument('--do_predict', type = bool, default = True,
+                    help = 'whether to predict')
+
+args = parser.parse_args()
     
-    model = Train_D_Table(args)
-    model.run(config)
-    
-    
-if __name__ == '__main__':
-    main()
-    
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3' 
+config = tf.ConfigProto() 
+config.gpu_options.allow_growth = True
+
+model = Train_D_Table(args)
+model.run(config)
     
     
