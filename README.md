@@ -10,19 +10,17 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **12** special disease knowledge graph from original data：  
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
 **6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
-**1** Generic Cancer
+**1** Cancer-Generic
 
 ### Model/ 
-**TransE.py** :  A TransE model attaching category and description annotation.   
-**TransH.py** :  A TransH model attaching category and description annotation.   
-**ConvKB.py** :  A ConvKB model attaching category and description annotation.  
-**KGE.py** : A class of processing and tool functions for Knowledge Graph Embedding.  
-**Tokenization.py** : A tokenization function of BERT and BioBERT.  
-**Optimization.py** : A training optimization of BERT and BioBERT.  
-**Train_D_Table.py** : A training function for description table.   
-**C&D/** : Category table and Description table (Run Train_D_Table.py to get).   
-**Bert** : BERT parameters, self download in https://github.com/google-research/bert.     
-**Biobert** : BioBERT parameters, self download in https://github.com/dmis-lab/biobert.    
+**KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
+**Models.py** : TransE, TransH, ConvKB structure.  
+**Run_KGE.py** : Train KGE model.  
+**Tokenization.py** : Tokenization function of BERT and BioBERT.  
+**Optimization.py** : Training optimization of BERT and BioBERT.  
+**Train_D_Table.py** : Training function for description table.   
+**C&D/** : Category table and Description table (Run Train_D_Table.py to get).     
+**Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
 
 
 # Operating Instructions
