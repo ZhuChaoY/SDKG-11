@@ -3,7 +3,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 ## Abstract
 **Motivation**: Knowledge Graph (KG) is becoming increasingly important in the biomedical field. In addition to being a way of knowledge storage, KG can also provide a valuable reference for disciplinary research. Deriving new and reliable knowledge from existing knowledge by knowledge graph embedding technology is a popular method. Some add a variety of additional information to aid reasoning, namely multimodal reasoning. However, most of the existing biomedical KGs are constructed around an entity type, and they rarely focus on one specific disease.  
-**Results**: We propose a complete Specific Disease Knowledge Graph (SDKG) construction and multimodal reasoning process, considering five cancer diseases and six non-cancer diseases currently, aiming to discover new reliable knowledge and provide effective pre-training prior knowledge for that specific disease field. The final used SDKGs are obtained through original triplet extraction, standard entity set construction, impact factor screening, entity linking, and relation linking. We implement multimodal reasoning for SDKGs based on structure embedding, category embedding, and description embedding. Multimodal reasoning improves published embedding models on all SDKGs using link prediction task as the evaluation protocol. We use embedding results as initialization parameters to provide pre-trained knowledge for biomolecule interaction classification task. The result shows that these pre-trained embeddings can improve 1.5% overall classification accuracy. 
+**Results**: We propose a complete Specific Disease Knowledge Graph (SDKG) construction and multimodal reasoning process, considering five cancers and six non-cancer diseases, aiming to discover new reliable knowledge and provide adequate pre-trained knowledge for that specific disease field. The final used SDKGs are obtained through original triplet extraction, standard entity set construction, entity linking, and relation linking. We implement multimodal reasoning for SDKGs based on structure embedding, category embedding, and description embedding. Multimodal reasoning improves published models on all SDKGs using entity prediction task as the evaluation protocol. Using embedding results as initialization parameters to provide pre-trained knowledge for biomolecule interaction classification task, we elevated overall classification accuracy from 82.1% (random initialization) to 83.6%. And the artificial check of the predicted drug-gene entity pairs confirms the reliability of our model for discovering new knowledge.
 
 # Files
 ### Dataset/
@@ -27,7 +27,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.   
 python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_train True --do_predict True  
 
-(2) Run Run_KGE.py to train TransE, TransH, and ConvKB.
+(2) Run Run_KGE.py to train TransE, TransH, and ConvKB.  
 TransE:   
 python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False  
 TransH:  
