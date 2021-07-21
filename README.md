@@ -24,8 +24,17 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 
 # Operating Instructions
-(1) Run Train_D_Table.py to get D_table in Model/C&D/.  
-(2) Run TransE.py or TransH.py or ConvKB.py, modify the args dict in main() function first.  
+(1) Run Train_D_Table.py to get D_table in Model/C&D/.   
+python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_train True --do_predict True  
+
+(2) Run Run_KGE.py to train TransE, TransH, and ConvKB.
+TransE:   
+python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False  
+TransH:  
+python Run_KGE.py --model TransH --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
+ConvKB:  
+python Run_KGE.py --model ConvKB --disease can --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
+
 
 
 
