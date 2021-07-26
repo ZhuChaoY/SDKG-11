@@ -30,7 +30,7 @@ python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_t
 
 (2) Run Run_KGE.py to train TransE, TransH, and ConvKB.  
 **TransE**:   
-python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False  
+  <h1>python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False</h1>    
 **TransH**:  
 python Run_KGE.py --model TransH --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
 **ConvKB**:  
