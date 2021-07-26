@@ -43,7 +43,7 @@ Note that we use the abbreviation of disease nameas follow.
  'lic' : 'liver_cancer',
  'luc' : 'lung_cancer',
  'ra'  : 'rheumatoid_arthritis',
- 'can' : '_cancer'} 
+ 'can' : '_cancer'}  
 **TransE**:   
 ```
 $ python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False
