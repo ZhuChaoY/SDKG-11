@@ -23,6 +23,9 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **C&D/** : Category table and Description table (Run Train_D_Table.py to get).     
 **Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
 
+### Instance Validation/  
+drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.  
+
 
 # Operating Instructions
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.   
@@ -31,7 +34,7 @@ $ python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do
 ```
 
 (2) Run Run_KGE.py to train TransE, TransH, and ConvKB.  
-Note that we use the abbreviation of disease nameas follow.
+Note that we use the abbreviation of disease nameas as follow.
 {'ad'  : 'alzheimer_disease',
  'cop' : 'chronic_obstructive_pulmonary',
  'cc'  : 'colon_cancer',
