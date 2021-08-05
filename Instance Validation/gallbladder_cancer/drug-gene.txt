@@ -1,0 +1,51 @@
+Rank	Score	Drug-Name	Drug-ID	Gene-Name	Gene-ID	
+25	1.83	Metformin	00331	BTC	685	
+26	1.767	Emodin	07715	BTC	685	
+27	1.747	Gemcitabine	00441	HCC	619501	
+28	1.57	Sorafenib	00398	BTC	685	
+30	1.387	Gemcitabine	00441	PRKAA1	5562	
+31	1.192	Celecoxib	00482	TCEAL1	9338	
+32	1.04	Nivolumab	06132	BTC	685	
+33	0.893	Gemcitabine	00441	PIK3CA	5290	
+36	0.695	Afatinib	08916	BTC	685	
+37	0.694	Celecoxib	00482	BTC	685	
+38	0.657	Gemcitabine	00441	VIM	7431	
+39	0.598	Cisplatin	00515	PRKAA1	5562	
+40	0.54	Gemcitabine	00441	MLH1	4292	
+41	0.513	Artemisinin	13132	BTC	685	
+43	0.495	Nivolumab	06132	CEACAM5	1048	
+44	0.482	Cisplatin	00515	CDK4	1019	
+45	0.474	Gemcitabine	00441	MMP9	4318	
+46	0.451	Gemcitabine	00441	MAPK1	5594	
+47	0.363	Ursodeoxycholic acid	01586	MUC5AC	4586	
+48	0.356	Artemisinin	13132	TCEAL1	9338	
+49	0.333	Paclitaxel	01229	SST	6750	
+50	0.326	Gemcitabine	00441	TP63	8626	
+51	0.317	Mangostin	14371	BTC	685	
+52	0.255	Gemcitabine	00441	MAPK8	5599	
+53	0.246	Nivolumab	06132	ERBB2	2064	
+54	0.238	N-acetylsulfanilyl chloride	12337	CCL21	6366	
+55	0.229	Nivolumab	06132	TP53	7157	
+56	0.198	Curcumin	11672	MN1	4330	
+57	0.17	Fluorouracil	00544	BTC	685	
+58	0.159	Paclitaxel	01229	NFKB1	4790	
+59	0.124	Metformin	00331	TP53	7157	
+60	0.111	Gemcitabine	00441	PIK3CG	5294	
+61	0.083	Gemcitabine	00441	CDK4	1019	
+62	0.057	Cisplatin	00515	MAPK1	5594	
+63	0.053	Obinepitide	05045	BTC	685	
+64	0.008	Rasagiline	01367	TP53	7157	
+65	-0.016	Paclitaxel	01229	MAPK1	5594	
+66	-0.026	Artemisinin	13132	STAT1	6772	
+67	-0.065	N-acetylsulfanilyl chloride	12337	ROR2	4920	
+68	-0.073	Fludeoxyglucose (18F)	09150	BTC	685	
+70	-0.096	Sorafenib	00398	MAPK8	5599	
+71	-0.097	Gemcitabine	00441	MN1	4330	
+72	-0.17	Ursodeoxycholic acid	01586	HCC	619501	
+73	-0.205	Gemcitabine	00441	SELE	6401	
+74	-0.206	Paclitaxel	01229	TNF	7124	
+75	-0.206	Rasagiline	01367	PTGS2	5743	
+76	-0.22	Oleoyl-estrone	04870	TP53	7157	
+77	-0.25	Gemcitabine	00441	PTEN	5728	
+78	-0.254	Gemcitabine	00441	MSH2	4436	
+79	-0.272	Tegafur-uracil	09327	BTC	685	

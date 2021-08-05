@@ -1,0 +1,51 @@
+Rank	Score	Drug-Name	Drug-ID	Gene-Name	Gene-ID	
+38	6.291	Interleukin-1 alpha, human recombinant	14076	IL1B	3553	
+58	5.403	Leptin	05098	PSS	780904	
+65	5.179	Leptin	05098	MMP9	4318	
+72	5.072	Icosapent	00159	ASF1A	25842	
+73	5.058	Interleukin-1 alpha, human recombinant	14076	NFKB1	4790	
+118	4.549	Dibotermin alfa	11639	IL6	3569	
+126	4.476	Interleukin-1 alpha, human recombinant	14076	IFNG	3458	
+129	4.461	Interleukin-10	12880	IL10	3586	
+140	4.31	Leptin	05098	MMP13	4322	
+143	4.268	Interleukin-1 alpha, human recombinant	14076	NCOA5	57727	
+145	4.206	Leptin	05098	IL6	3569	
+163	3.998	Human interleukin-2	14865	ICAM1	3383	
+167	3.981	Interleukin-1 alpha, human recombinant	14076	MAPK1	5594	
+169	3.963	Metformin	00331	OAP	4937	
+174	3.861	Dibotermin alfa	11639	TNFSF11	8600	
+190	3.682	Interleukin-7	05529	ASF1A	25842	
+195	3.624	Interferon Gamma	15753	JUNB	3726	
+199	3.578	Interferon Gamma	15753	IFNA1	3439	
+201	3.567	Interleukin-10	12880	TNFSF11	8600	
+204	3.517	Dibotermin alfa	11639	NCOA5	57727	
+205	3.502	Vitamin D	11094	OAP	4937	
+207	3.498	Interleukin-10	12880	AKT1	207	
+213	3.421	Leptin	05098	ALPP	250	
+216	3.37	Leptin	05098	TNFSF11	8600	
+224	3.285	Levothyroxine	00451	OAP	4937	
+225	3.284	Calcitonin gene-related peptide	05621	NCOA5	57727	
+230	3.207	Human interleukin-2	14865	IFNB1	3456	
+231	3.205	Interleukin-10	12880	MAPK1	5594	
+234	3.188	Interleukin-10	12880	ERVK-11	100862688	
+239	3.112	Interleukin-1 alpha, human recombinant	14076	MMP13	4322	
+244	3.064	Interleukin-10	12880	SYVN1	84447	
+246	3.051	Interleukin-1 alpha, human recombinant	14076	IL4	3565	
+247	3.046	Interleukin-10	12880	NFATC1	4772	
+248	3.042	Inosine	04335	FAS	355	
+255	2.986	Leptin	05098	TNFRSF11B	4982	
+256	2.983	Dibotermin alfa	11639	ASF1A	25842	
+257	2.98	Interferon Gamma	15753	FOS	2353	
+259	2.967	Leptin	05098	MMP2	4313	
+261	2.922	Leptin	05098	IL1B	3553	
+262	2.883	Interleukin-1 alpha, human recombinant	14076	NR3C1	2908	
+264	2.875	Leptin	05098	IL10	3586	
+265	2.857	Interleukin-10	12880	CNTN2	6900	
+267	2.838	Regramostim	05386	ALPP	250	
+268	2.836	Dibotermin alfa	11639	PTGS2	5743	
+269	2.835	Interleukin-1 alpha, human recombinant	14076	TNFSF11	8600	
+270	2.829	Celecoxib	00482	NCOA5	57727	
+271	2.804	Interferon Gamma	15753	MMP13	4322	
+272	2.775	Interleukin-7	05529	NCOA5	57727	
+274	2.692	Leptin	05098	IL4	3565	
+275	2.688	Leptin	05098	IFNG	3458	
