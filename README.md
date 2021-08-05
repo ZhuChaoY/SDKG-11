@@ -24,7 +24,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
 
 ### Instance Validation/  
-drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.  
+Top 50 predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.  
 
 
 # Operating Instructions
