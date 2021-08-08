@@ -1,7 +1,7 @@
 import re
 import json
+import time
 import pickle
-import timeit
 import random
 import numpy as np
 import pandas as pd
@@ -248,7 +248,7 @@ class KGE():
         print('\n>>  Training Process. ({} EPOCHES) '.format(eps))
         print('    EPOCH Train-LOSS Valid-MR Valid-MRR  time   TIME')  
             
-        t0 = t1 = timeit.default_timer()
+        t0 = t1 = time.time()
         for ep in range(eps):
             sample = random.sample(range(n_train), n_train)
             idxes = [sample[i * bs: (i + 1) * bs] for i in range(n_batch)]
@@ -266,7 +266,7 @@ class KGE():
                 print('    {:^5} {:^10.4f} '. \
                       format(ep + 1, Loss / n_batch / bs), end = '')
                 _ = self._link_prediction(sess, self.dev)
-                _t = timeit.default_timer()
+                _t = time.time()
                 print(' {:^6.2f} {:^6.2f}'. \
                       format((_t - t1) / 60, (_t - t0) / 60))
                 t1 = _t
@@ -274,7 +274,7 @@ class KGE():
         print('\n    Train:    --     ', end = '')
         _ = self._link_prediction(sess, self.train[random.sample( \
             range(n_train), self.n_dev)])
-        _t = timeit.default_timer()
+        _t = time.time()
         print(' {:^6.2f} {:^6.2f}'.format((_t - t1) / 60, (_t - t0) / 60))
         
         if self.save_model:
@@ -290,10 +290,10 @@ class KGE():
         """
                 
         print('\n>>  Link Prediction Result.')
-        t0 = timeit.default_timer()
+        t0 = time.time()
         print('    Test--MR Test--MRR TIME\n    ', end = '')
         result = self._link_prediction(sess, self.test)
-        print(' {:^6.2f}'.format((timeit.default_timer() - t0) / 60))
+        print(' {:^6.2f}'.format((time.time() - t0) / 60))
         result.update(self.args)
         myjson(self.out_dir + 'result', result)
         
@@ -395,34 +395,39 @@ class KGE():
     
     def _em_evaluate(self, sess):
         """
-        Cal scores for all (drug, r, gene) triplets.
+        Cal scores for all drug-gene, gene-disease, disease-drug triplets.
         
         Args:
             sess: tf.Session
         """
-        
-        t0 = timeit.default_timer()
-        print('\n>>  Cal scores for all (drug, r, gene) triplets.')
-        drugs, genes = [], []
+
+        drugs, genes, diseases = [], [], []
         for e in self.E:
             _e = e.split('-')[0]
+            v = self.E_dict[e]
             if _e == 'drug':
-                drugs.append(self.E_dict[e])
+                drugs.append(v)
             elif _e == 'gene':
-                genes.append(self.E_dict[e])
-        n_drug, n_gene = len(drugs), len(genes)
-        scores = np.zeros((n_drug, n_gene), dtype = float)
-        for i in range(n_drug):
-            for j in range(n_gene):
-                T = np.array([[drugs[i], r, genes[j]]
-                              for r in range(self.n_R)])
-                score = sess.run(self.score_pos, {self.T_pos: T, 
-                                 self.keep: 1.0})
-                scores[i, j] = min(score)
+                genes.append(v)
+            elif _e == 'disease':
+                diseases.append(v)
         
-        mypickle(self.out_dir + 'T_scores', scores)
-        print('\n   {:2f} min.'.format((timeit.default_timer() - t0) / 60))
-    
+        for X, Y in (('drug', 'gene'), ('gene', 'disease'),
+                     ('disease', 'drug')):
+            t0 = time.time()
+            n_X, n_Y = eval('len(' + X + ')'), eval('len(' + Y + ')')
+            print('\n>>  Cal scores for {} * {} * {} = {} {}-{} pairs.'. \
+                  format(n_X, self.n_R, n_Y, n_X * self.n_R * n_Y, X, Y))
+            S = np.zeros((n_X, n_Y), dtype = float)
+            for i in range(n_X):
+                for j in range(n_Y):
+                    T = np.array([[eval(X + 's[i]'), r, eval(Y + 's[j]')]
+                                  for r in range(self.n_R)])
+                    S[i, j] = min(sess.run(self.score_pos,
+                                           {self.T_pos: T, self.keep: 1.0}))
+            mypickle('{}{}-{}_scores'.format(self.out_dir, X, Y), S)
+            print('    {:2f} min.'.format((time.time() - t0) / 60)) 
+                
     
     def run(self, config):
         """
