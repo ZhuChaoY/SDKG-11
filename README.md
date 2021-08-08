@@ -13,6 +13,9 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
 **1** Cancer-Generic
 
+### Instance Validation/  
+Top 50 predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.   
+
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
 **Models.py** : TransE, TransH, ConvKB structure.  
@@ -22,9 +25,6 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Train_D_Table.py** : Training function for description table.   
 **C&D/** : Category table and Description table (Run Train_D_Table.py to get).     
 **Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
-
-### Instance Validation/  
-Top 50 predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.  
 
 
 # Operating Instructions
