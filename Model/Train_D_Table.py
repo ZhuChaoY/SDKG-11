@@ -1,6 +1,6 @@
 import os
 import re
-import timeit
+import time
 import random
 import argparse
 import numpy as np
@@ -251,7 +251,7 @@ class Train_D_Table():
         print('\n' + '# ' * 6 + ' Training ({} EPOCHES) '. \
               format(self.epoches) + ' #' * 6)
         print('    EPOCH   LOSS   time   TIME')
-        t0 = t1 = timeit.default_timer()         
+        t0 = t1 = time.time()        
         for epoch in range(self.epoches):
             print('    {:^5}'.format(epoch + 1), end = '')
             n_batch = self.n_train // bs
@@ -268,7 +268,7 @@ class Train_D_Table():
                                     self.keep_prob: 0.9})
                 Loss += loss
             
-            _t = timeit.default_timer()
+            _t = time.time()
             print(' {:>6.4f} {:>6.2f} {:>6.2f}'.format(Loss / n_batch / bs,
                   (_t - t1) / 60, (_t - t0) / 60))  
             t1 = _t
@@ -291,14 +291,14 @@ class Train_D_Table():
             ds.append(self.D_dict[n_batch * bs: ])
         
         print('\n' + '# ' * 6 + ' Prediction ' + ' #' * 6)
-        t0 = timeit.default_timer()
+        t0 = time.time()
         D_table = []
         for d in ds:
             batch_D = np.array(d)
             D_table.append(sess.run(self.bert_out, {self.batch_D: batch_D, 
                                                     self.keep_prob: 1.0}))                            
         print('>>  Total Time: {:.2f}min'. \
-              format((timeit.default_timer() - t0) / 60))
+              format((time.time() - t0) / 60))
         mypickle(self.out_dir + 'D_table', np.vstack(D_table))
         
     
@@ -330,7 +330,7 @@ def layer_norm(inputs):
 
 parser = argparse.ArgumentParser(description = 'Train_D_table')
 
-parser.add_argument('--len_d', type = str, default = 128,
+parser.add_argument('--len_d', type = int, default = 128,
                     help = 'length of the text') 
 parser.add_argument('--l_r', type = float, default = 1e-5, 
                     help = 'learning rate')

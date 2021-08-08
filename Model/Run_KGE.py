@@ -5,7 +5,7 @@ from Models import *
     
 parser = argparse.ArgumentParser(description = 'KGE')
 
-parser.add_argument('--model', type = str, default = 'TransE',
+parser.add_argument('--model', type = str, default = 'ConvKB',
                     help = 'model name') #'TransE', 'TransH', 'ConvKB'
 parser.add_argument('--disease', type = str, default = 'can',
                     help = 'disease abbreviaton') #look at disease_dict
@@ -13,15 +13,15 @@ parser.add_argument('--dim', type = int, default = 256,
                     help = 'embedding dimension')
 parser.add_argument('--margin', type = float, default = None,
                     help = 'margin value for TransE and TransH')
-parser.add_argument('--n_filter', type = int, default = None,
+parser.add_argument('--n_filter', type = int, default = 4,
                     help = 'number of filters for ConvKB')
 parser.add_argument('--dropout', type = float, default = 0.0, 
                     help = 'dropout rate for ConvKB')
-parser.add_argument('--lanta_c', type = float, default = 0.0,
+parser.add_argument('--lanta_c', type = float, default = 0.00,
                     help = 'lanta for category')
-parser.add_argument('--lanta_d', type = float, default = 0.0, 
+parser.add_argument('--lanta_d', type = float, default = 0.00, 
                     help = 'lanta for description')
-parser.add_argument('--l_r', type = float, default = 1e-3, 
+parser.add_argument('--l_r', type = float, default = 1e-4, 
                     help = 'learning rate')
 parser.add_argument('--batch_size', type = int, default = None,
                     help = 'batch size for SGD')
@@ -34,7 +34,8 @@ parser.add_argument('--save_model', type = bool, default = False,
 parser.add_argument('--do_predict', type = bool, default = True,
                     help = 'whether to predict')
 parser.add_argument('--do_evaluate', type = bool, default = False,
-                    help = 'whether to evaluate for drug-gene pairs')
+                    help = 'whether to evaluate for drug-gene, gene-disease, '
+                    'and disease-drug triplets')
     
 args = parser.parse_args()
 disease_dict = \
