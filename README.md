@@ -14,7 +14,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **1** Cancer-Generic
 
 ### Instance Validation/  
-Top 50 predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.   
+Top K (set as 10% of the training set size) predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.   
 
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
