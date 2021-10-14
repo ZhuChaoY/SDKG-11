@@ -13,8 +13,9 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
 **1** Cancer-Generic
 
-### Instance Validation/  
-Top K (set as 10% of the training set size) predicted drug-gene, gene-disease, and disease-drug entity pairs of 12 special diseases.   
+### inferred new knowledge/  
+Inferred new knowledge of drug-gene, gene-disease, and disease-drug entity pairs of special diseases.   
+Closed triplets of {drug, gene, disease}.   
 
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
