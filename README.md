@@ -11,7 +11,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **12** special disease knowledge graph from original data：  
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
 **6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
-**1** Cancer-Generic
+**1** Cancer-Generic   
 entity_name_dict.json Key-Entity_name mapping dict.   
 
 ### inferred new knowledge/  
