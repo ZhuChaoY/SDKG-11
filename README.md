@@ -55,7 +55,7 @@ python Run_KGE.py --model TransE --disease can --dim 256 --margin 1.0 --dropout 
 ```
 **TransH**:  
 ```
-$ python Run_KGE.py --model TransH --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
+python Run_KGE.py --model TransH --disease can --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
 ```
 **ConvKB**:  
 ```
