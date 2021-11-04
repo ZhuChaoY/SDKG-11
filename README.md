@@ -6,7 +6,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Results**: This work proposes a construction and multimodal reasoning process of Specific Disease Knowledge Graphs (SDKGs), considering five cancers and six non-cancer diseases, aiming to discover new reliable knowledge and provide universal pre-trained knowledge for that specific disease field. The SDKGs are obtained through original triplet extraction, standard entity set construction, entity linking, and relation linking. We implement multimodal reasoning for SDKGs based on structure, category, and description embeddings. Multimodal reasoning improves pre-existing models on all SDKGs using entity prediction task as the evaluation protocol. We verify the model's reliability in discovering new knowledge by manual proofreading predicted drug-gene, gene-disease, and disease-drug entity pairs. Using embedding results as initialization parameters for the biomolecular interaction classification, we demonstrate the universality of embedding models.
 
 
-# Files
+## Files
 ### Dataset/
 **12** special disease knowledge graph from original data：  
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
@@ -29,7 +29,7 @@ Closed triplets of {drug, gene, disease}.
 **Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
 
 
-# Operating Instructions
+## Operating Instructions
 (1) Run Train_D_Table.py to get D_table in Model/C&D/.   
 ```
 python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_train True --do_predict True  
