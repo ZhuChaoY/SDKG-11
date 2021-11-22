@@ -54,7 +54,7 @@ python Run_KGE.py --model TransH --disease [can] --dim 256 --margin 1.0 --dropou
 python Run_KGE.py --model ConvKB --disease [can] --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-4 --epoches 200 --do_train True --save_model False --do_predict True --do_evaluate False   
 ```
 
-**[can]** from the abbreviation of disease nameas as follow.
+**[can]** from the abbreviation of disease nameas as follow.   
 {'ad'  : 'alzheimer_disease',  
  'cop' : 'chronic_obstructive_pulmonary',  
  'cc'  : 'colon_cancer',  
