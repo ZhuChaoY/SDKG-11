@@ -43,18 +43,18 @@ python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_t
 (2) Run Run_KGE.py to train TransE, TransH, and ConvKB.  
 **TransE**:   
 ```
-python Run_KGE.py --model TransE --disease [can] --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False
+python Run_KGE.py --model TransE --disease [disease] --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False
 ```
 **TransH**:  
 ```
-python Run_KGE.py --model TransH --disease [can] --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
+python Run_KGE.py --model TransH --disease [disease] --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
 ```
 **ConvKB**:  
 ```
-python Run_KGE.py --model ConvKB --disease [can] --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-4 --epoches 200 --do_train True --save_model False --do_predict True --do_evaluate False   
+python Run_KGE.py --model ConvKB --disease [disease] --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-4 --epoches 200 --do_train True --save_model False --do_predict True --do_evaluate False   
 ```
 
-**[can]** from the abbreviation of disease nameas as follow.   
+**[disease]** from the abbreviation of disease nameas as follow.   
 {'ad'  : 'alzheimer_disease',  
  'cop' : 'chronic_obstructive_pulmonary',  
  'cc'  : 'colon_cancer',  
