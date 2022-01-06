@@ -25,7 +25,7 @@ Self download from https://github.com/dmis-lab/biobert.
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
 **Models.py** : TransE, TransH, ConvKB structure.  
 **Run_KGE.py** : Train KGE model.  
-**Optimization.py** : Training optimization of BERT and BioBERT. 
+**Optimization.py** : Training optimization of BERT and BioBERT.   
 **Tokenization.py** : Tokenization function of BERT and BioBERT.   
 **Train_D_Table.py** : Training function for description table.   
  
