@@ -8,7 +8,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 ## Files
 ### Annotation/
 **E_dict_0.json** ~ **E_dict_5.json**   
-**get_E_dict.py** (run it first to get complete E_dict.json)
+**get_E_dict.py** : Run it first to get complete E_dict.json.
 
 ### Dataset/ 
 **5 Cancers** (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
