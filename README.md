@@ -7,17 +7,14 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 ## Files
 ### Annotation/
-E_dict_0.json ~ E_dict_5.json  (Run **get_E_dict.py** to get complete E_dict.)    
+**E_dict_0.json** ~ **E_dict_5.json**   
+**get_E_dict.py** (run it first to get complete E_dict.json)
 
 ### Dataset/ 
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
 **6** NonCancer (alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
 **1** Cancer5  
-**1** Disease11  
-
-### inferred new knowledge/  
-Inferred new knowledge of drug-gene, gene-disease, and disease-drug entity pairs of special diseases.   
-Closed triplets of {drug, gene, disease}.   
+**1** Disease11   
 
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
@@ -28,6 +25,13 @@ Closed triplets of {drug, gene, disease}.
 **Train_D_Table.py** : Training function for description table.   
 **C&D/** : Category table and Description table (Run Train_D_Table.py to get).     
 **Biobert** : BioBERT parameters, self download from https://github.com/dmis-lab/biobert.    
+
+### Supplementary Table/  
+**Supplementary Table S1 (statistical analysis of entity prediction)**  
+**Supplementary Table S2 (drug-gene new inferred knowledge)**   
+**Supplementary Table S3 (gene-disease new inferred knowledge)**   
+**Supplementary Table S4 (disease-drug new inferred knowledge)**   
+**Supplementary Table S4 (disease-drug new inferred knowledge)**   
 
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
