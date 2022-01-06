@@ -6,12 +6,11 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Results**: This work develops a construction and multimodal reasoning process of Specific Disease Knowledge Graphs (SDKGs). We construct SDKG-11, a SDKG set including five cancers, six non-cancer diseases, a combined Cancer5, and a combined Diseases11, aiming to discover new reliable knowledge and provide universal pre-trained knowledge for that specific disease field. SDKG-11 is obtained through original triplet extraction, standard entity set construction, entity linking, and relation linking. We implement multimodal reasoning by reverse-hyperplane projection for SDKGs based on structure, category, and description embeddings. Multimodal reasoning improves pre-existing models on all SDKGs using entity prediction task as the evaluation protocol. We verify the model's reliability in discovering new knowledge by manually proofreading predicted drug-gene, gene-disease, and disease-drug pairs. Using embedding results as initialization parameters for the biomolecular interaction classification, we demonstrate the universality of embedding models.   
 
 ## Files
-### Dataset/
-**12** special disease knowledge graph from original data：  
+### Dataset/ 
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
-**6** NonCancer (alzheimer_disease, chronic_obstructive_pulmonary, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
-**1** Cancer-Generic   
-**entity_name_dict.json** : Key-Entity_name mapping dict.   
+**6** NonCancer (alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
+**1** Cancer5
+**1** Disease11
 
 ### inferred new knowledge/  
 Inferred new knowledge of drug-gene, gene-disease, and disease-drug entity pairs of special diseases.   
