@@ -11,8 +11,8 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **get_E_dict.py** : Run it first to get complete E_dict.json.
 
 ### Dataset/ 
-**5 Cancers** (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
-**6 NonCancer** (alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
+**5 Cancers** : Including colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer.        
+**6 NonCancer** : Including alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis.      
 **Cancer5**   
 **Disease11**     
 
