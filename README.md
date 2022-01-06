@@ -65,16 +65,16 @@ python Run_KGE.py --model ConvKB --disease [disease] --dim 256 --n_filter 8 --dr
 ```
 
 **[disease]** from the abbreviation of disease names as follow.   
-{'ald' : 'alzheimer_disease',
- 'coc' : 'colon_cancer',
- 'cop' : 'copd',
- 'chd' : 'coronary_heart_disease',
- 'dia' : 'diabetes',
- 'gac' : 'gallbladder_cancer',
- 'gsc' : 'gastric_cancer',
- 'hef' : 'heart_failure',
- 'lic' : 'liver_cancer',
- 'luc' : 'lung_cancer',
- 'rha' : 'rheumatoid_arthritis',
- 'can' : '_cancer5',
- 'dis' : '_disease11'}  
+{'ald' : 'alzheimer_disease',  
+ 'coc' : 'colon_cancer',  
+ 'cop' : 'copd',  
+ 'chd' : 'coronary_heart_disease',  
+ 'dia' : 'diabetes',  
+ 'gac' : 'gallbladder_cancer',  
+ 'gsc' : 'gastric_cancer',  
+ 'hef' : 'heart_failure',  
+ 'lic' : 'liver_cancer',  
+ 'luc' : 'lung_cancer',  
+ 'rha' : 'rheumatoid_arthritis',  
+ 'can' : '_cancer5',  
+ 'dis' : '_disease11'}    
