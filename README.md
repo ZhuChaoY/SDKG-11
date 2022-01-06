@@ -1,4 +1,4 @@
-# KGE-SDKG
+# SDKG-11
 Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 ## Abstract
