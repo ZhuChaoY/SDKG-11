@@ -25,8 +25,8 @@ Self download from https://github.com/dmis-lab/biobert.
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
 **Models.py** : TransE, TransH, ConvKB structure.  
 **Run_KGE.py** : Train KGE model.  
-**Optimization.py** : Training optimization of BERT and BioBERT.   
-**Tokenization.py** : Tokenization function of BERT and BioBERT.   
+**Optimization.py** : Training optimization of BioBERT.   
+**Tokenization.py** : Tokenization function of BioBERT.   
 **Train_D_Table.py** : Training function for description table.   
  
 
@@ -35,7 +35,7 @@ Self download from https://github.com/dmis-lab/biobert.
 **Supplementary Table S2 (drug-gene new inferred knowledge)**   
 **Supplementary Table S3 (gene-disease new inferred knowledge)**   
 **Supplementary Table S4 (disease-drug new inferred knowledge)**   
-**Supplementary Table S4 (disease-drug new inferred knowledge)**   
+**Supplementary Table S5 (closed-triplets)**    
 
 ## Reference
 (1) **TransE**: [Translating Embeddings for Modeling Multi-relational Data](https://www.cs.sjtu.edu.cn/~li-fang/deeplearning-for-modeling-multi-relational-data.pdf)   
