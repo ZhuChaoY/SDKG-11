@@ -9,8 +9,8 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 ### Dataset/ 
 **5** Cancer (colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer)    
 **6** NonCancer (alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis)    
-**1** Cancer5
-**1** Disease11
+**1** Cancer5  
+**1** Disease11  
 
 ### inferred new knowledge/  
 Inferred new knowledge of drug-gene, gene-disease, and disease-drug entity pairs of special diseases.   
