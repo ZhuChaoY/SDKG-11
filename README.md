@@ -17,9 +17,9 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Disease11**     
 
 ### Model/ 
-##C&D/  
+#### C&D/  
 Category table and Description table (Run Train_D_Table.py to get).     
-##Pretrained BioBERT/  
+#### Pretrained BioBERT/  
 Self download from https://github.com/dmis-lab/biobert.   
 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
