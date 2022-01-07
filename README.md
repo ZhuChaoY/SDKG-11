@@ -52,9 +52,19 @@ Self download from https://github.com/dmis-lab/biobert
 (5) **BioBERT**: [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/pdf/1901.08746v2.pdf)
 
 ## Operating Instructions
-(1) Run get_E_dict.py to E_dict.json in Annotation/     
+(1) Run get_E_dict.py to get E_dict.json in **Annotation/**     
 ```
 python get_E_dict.py
+```
+
+(2) Run get_C_dict.py to get C_dict.data and E_index.data in **Model/C&D/**     
+```
+python get_C_dict.py   
+```
+
+(2) Run Run_D_Table.py to get C_dict.data in **Model/C&D/**     
+```
+python get_C_dict.py   
 ```
 
 (2) Run Run_KGE.py to train TransE, TransH, and ConvKB    
