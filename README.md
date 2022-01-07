@@ -68,7 +68,7 @@ python Run_D_Table.py --len_d 150 --dim 200 --l_r 1e-5 --batch_size 8 --epoches 
 ```
 
 (4) Run Run_KGE.py to train TransE, TransH, and ConvKB in **Model/**
-### Parameter Interpretation  
+#### Parameter Interpretation  
 lanta_c == 0 and lanta_d == 0 : S  
 lanta_c != 0 and lanta_d == 0 : S + C  
 lanta_c == 0 and lanta_d != 0 : S + D  
