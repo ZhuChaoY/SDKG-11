@@ -71,22 +71,8 @@ python Run_D_Table.py --len_d 150 --dim 200 --l_r 1e-5 --batch_size 8 --epoches 
 ### Parameter Interpretation  
 lanta_c == 0 and lanta_d == 0 : S  
 lanta_c != 0 and lanta_d == 0 : S + C  
-lanta_c == 0 and lanta_d != 0 : S + D
-lanta_c != 0 and lanta_d != 0 : S + C + D 
-
-
-**TransE**:   
-```
-python Run_KGE.py --model TransE --disease **[disease]** --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False
-```
-**TransH**:  
-```
-python Run_KGE.py --model TransH --disease **[disease]** --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 400 --do_train True --save_model False --do_predict True --do_evaluate False   
-```
-**ConvKB**:  
-```
-python Run_KGE.py --model ConvKB --disease **[disease]** --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-4 --epoches 200 --do_train True --save_model False --do_predict True --do_evaluate False   
-```
+lanta_c == 0 and lanta_d != 0 : S + D  
+lanta_c != 0 and lanta_d != 0 : S + C + D  
 
 **[disease]** from the abbreviation of disease names as follow      
 {'ald' : 'alzheimer_disease',  
@@ -101,4 +87,20 @@ python Run_KGE.py --model ConvKB --disease **[disease]** --dim 256 --n_filter 8 
  'luc' : 'lung_cancer',  
  'rha' : 'rheumatoid_arthritis',  
  'can' : '_cancer5',  
- 'dis' : '_disease11'}    
+ 'dis' : '_disease11'}   
+
+**TransE**:   
+```
+python Run_KGE.py --model TransE --disease **[disease]** --dim 200 --margin 0.6 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 1000
+```
+**TransH**:  
+```
+python Run_KGE.py --model TransH --disease **[disease]** --dim 200 --margin 0.6 --lanta_c 0.0 --lanta_d 0.0 --l_r 5e-3 --epoches 1000
+```
+**ConvKB**:  
+```
+python Run_KGE.py --model ConvKB --disease **[disease]** --dim 200 --n_filter 10 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 200
+```
+
+The above are the parameters for S.  
+For S + C, S + D, and S + C + D, (l_r = 5e-4,  epoches = 200) is recommended.  
