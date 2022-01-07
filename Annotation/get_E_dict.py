@@ -4,7 +4,7 @@ import json
 
 p = 'E_dict.json'
 if os.path.exists(p):
-    with open('E_dict.json') as file:
+    with open(p) as file:
         E_dict = json.load(file)
     print('>>  E_dict already exists !')
 else:
