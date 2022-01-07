@@ -35,7 +35,7 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **bert_model.ckpt.index**  
 **bert_model.ckpt.meta**  
 **vocab.txt**  
-All self download from https://github.com/dmis-lab/biobert     
+Self download from https://github.com/dmis-lab/biobert     
 
 ### Supplementary Table/  
 **Supplementary Table S1 (statistical analysis of entity prediction)**  
