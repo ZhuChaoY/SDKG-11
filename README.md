@@ -19,13 +19,16 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 ### Model/ 
 **KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding    
 **Models.py** : TransE, TransH, ConvKB structure    
-**Run_KGE.py** : Run KGE.py     
+**Run_KGE.py** : Run KGE.py        
+#### C&D/
+**C_dict.data** : Dict of entity category annotation
+**D_table.data** : Table of entity description annotation
+**E_index.json** : Entity index dict for C_dict and D_table
+**get_C_dict.py** : Run it to get C_dict.data and E_index.data    
 **D_Table.py** : Structure for training description table        
 **Optimization.py** : Training optimization of BioBERT     
 **Tokenization.py** : Tokenization function of BioBERT     
-**Run_D_Table.py** : Run D_Table.py    
-#### C&D/  
-Category table and Description table (Run Train_D_Table.py to get)       
+**Run_D_Table.py** : Run it to get D_table.data 
 #### Pretrained BioBERT/  
 Self download from https://github.com/dmis-lab/biobert     
  
