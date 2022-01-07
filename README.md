@@ -8,26 +8,26 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 ## Files
 ### Annotation/
 **E_dict_0.json** ~ **E_dict_5.json**   
-**get_E_dict.py** : Run it first to get complete E_dict.json.
+**get_E_dict.py** : Run it first to get complete E_dict.json   
 
 ### Dataset/ 
-**5 Cancers** : Including colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer.        
-**6 NonCancer** : Including alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis.      
+**5 Cancers** : Including colon_cancer, gallbladder_cancer, gastric_cancer, liver_cancer, lung_cancer          
+**6 NonCancer** : Including alzheimer_disease, copd, coronary_heart_disease, diabetes, heart_failure, rheumatoid_arthritis        
 **Cancer5**   
 **Disease11**     
 
 ### Model/ 
-**KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding.  
-**Models.py** : TransE, TransH, ConvKB structure.  
-**Run_KGE.py** : Run KGE.py.   
-**D_Table.py** : Structure for training description table.      
-**Optimization.py** : Training optimization of BioBERT.   
-**Tokenization.py** : Tokenization function of BioBERT.   
-**Run_D_Table.py** : Run D_Table.py.  
+**KGE.py** : Class of processing and tool functions for Knowledge Graph Embedding    
+**Models.py** : TransE, TransH, ConvKB structure    
+**Run_KGE.py** : Run KGE.py     
+**D_Table.py** : Structure for training description table        
+**Optimization.py** : Training optimization of BioBERT     
+**Tokenization.py** : Tokenization function of BioBERT     
+**Run_D_Table.py** : Run D_Table.py    
 #### C&D/  
-Category table and Description table (Run Train_D_Table.py to get).     
+Category table and Description table (Run Train_D_Table.py to get)       
 #### Pretrained BioBERT/  
-Self download from https://github.com/dmis-lab/biobert.   
+Self download from https://github.com/dmis-lab/biobert     
  
 
 ### Supplementary Table/  
@@ -45,12 +45,12 @@ Self download from https://github.com/dmis-lab/biobert.
 (5) **BioBERT**: [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/pdf/1901.08746v2.pdf)
 
 ## Operating Instructions
-(1) Run Train_D_Table.py to get D_table in Model/C&D/.   
+(1) Run Train_D_Table.py to get D_table in Model/C&D/     
 ```
 python Train_D_Table.py --len_d 128 --l_r 1e-5 --batch_size 8 --epoches 5 --do_train True --do_predict True  
 ```
 
-(2) Run Run_KGE.py to train TransE, TransH, and ConvKB.  
+(2) Run Run_KGE.py to train TransE, TransH, and ConvKB    
 **TransE**:   
 ```
 python Run_KGE.py --model TransE --disease [disease] --dim 256 --margin 1.0 --dropout 0.0 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-3 --epoches 800 --do_train True --save_model False --do_predict True --do_evaluate False
@@ -64,7 +64,7 @@ python Run_KGE.py --model TransH --disease [disease] --dim 256 --margin 1.0 --dr
 python Run_KGE.py --model ConvKB --disease [disease] --dim 256 --n_filter 8 --dropout 0.1 --lanta_c 0.0 --lanta_d 0.0 --l_r 1e-4 --epoches 200 --do_train True --save_model False --do_predict True --do_evaluate False   
 ```
 
-**[disease]** from the abbreviation of disease names as follow.   
+**[disease]** from the abbreviation of disease names as follow      
 {'ald' : 'alzheimer_disease',  
  'coc' : 'colon_cancer',  
  'cop' : 'copd',  
