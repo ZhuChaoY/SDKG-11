@@ -57,14 +57,14 @@ Self download from https://github.com/dmis-lab/biobert
 python get_E_dict.py
 ```
 
-(2) Run get_C_dict.py to get C_dict.data and E_index.data in **Model/C&D/**     
+(2) Run get_C_dict.py to get C_dict.data and E_index.data in **Model/C&D/** (Already in the folder, you can not run)    
 ```
 python get_C_dict.py   
 ```
 
-(2) Run Run_D_Table.py to get C_dict.data in **Model/C&D/**     
+(3) Run Run_D_Table.py to get D_table.data in **Model/C&D/**     
 ```
-python get_C_dict.py   
+python Run_D_Table.py --len_d 150 --dim 200 --l_r 1e-5 --batch_size 8 --epoches 10 --earlystop 1   
 ```
 
 (2) Run Run_KGE.py to train TransE, TransH, and ConvKB    
