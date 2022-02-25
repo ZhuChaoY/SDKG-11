@@ -5,6 +5,9 @@ Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 **Motivation**: Knowledge Graph (KG) is becoming increasingly important in the biomedical field. Deriving new and reliable knowledge from existing knowledge by knowledge graph embedding technology is a cutting-edge method. Some add a variety of additional information to aid reasoning, namely multimodal reasoning. However, few works based on the existing biomedical KGs are focused on specific diseases.    
 **Results**: This work develops a construction and multimodal reasoning process of Specific Disease Knowledge Graphs (SDKGs). We construct SDKG-11, a SDKG set including five cancers, six non-cancer diseases, a combined Cancer5, and a combined Diseases11, aiming to discover new reliable knowledge and provide universal pre-trained knowledge for that specific disease field. SDKG-11 is obtained through original triplet extraction, standard entity set construction, entity linking, and relation linking. We implement multimodal reasoning by reverse-hyperplane projection for SDKGs based on structure, category, and description embeddings. Multimodal reasoning improves pre-existing models on all SDKGs using entity prediction task as the evaluation protocol. We verify the model's reliability in discovering new knowledge by manually proofreading predicted drug-gene, gene-disease, and disease-drug pairs. Using embedding results as initialization parameters for the biomolecular interaction classification, we demonstrate the universality of embedding models.   
 
+## Paper Link
+https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac085/6527626?login=true
+
 ## Files
 ### Annotation/
 **E_dict_0.json** ~ **E_dict_5.json**   
