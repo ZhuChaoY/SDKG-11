@@ -2,7 +2,10 @@
 Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 ## Paper Link
-https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac085/6527626
+https://doi.org/10.1093/bioinformatics/btac085
+
+## Cite By
+Chaoyu Zhu, Zhihao Yang, Xiaoqiong Xia, Nan Li, Fan Zhong, Lei Liu, Multimodal reasoning based on knowledge graph embedding for specific diseases, Bioinformatics, 2022, btac085. 
 
 ## Abstract
 **Motivation**: Knowledge Graph (KG) is becoming increasingly important in the biomedical field. Deriving new and reliable knowledge from existing knowledge by knowledge graph embedding technology is a cutting-edge method. Some add a variety of additional information to aid reasoning, namely multimodal reasoning. However, few works based on the existing biomedical KGs are focused on specific diseases.    
