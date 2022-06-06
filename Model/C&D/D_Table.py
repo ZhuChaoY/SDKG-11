@@ -71,6 +71,7 @@ class D_Table():
         
         self.E = sorted(set(H) | set(Ta))
         self.n_E = len(self.E)
+        self.E_index = dict(zip(self.E, range(self.n_E)))
         print('    #entity   : {}'.format(self.n_E))
         
         self.R = sorted(set(R))
