@@ -2,7 +2,7 @@
 Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
 
 ## Paper Link
-https://doi.org/10.1093/bioinformatics/btac085
+https://academic.oup.com/bioinformatics/article/38/8/2235/6527626
 
 ## Cite By
 Chaoyu Zhu, Zhihao Yang, Xiaoqiong Xia, Nan Li, Fan Zhong, Lei Liu, Multimodal reasoning based on knowledge graph embedding for specific diseases, Bioinformatics, 2022, btac085. 
