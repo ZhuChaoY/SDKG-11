@@ -57,6 +57,11 @@ Self download from https://github.com/dmis-lab/biobert (The name of the original
 (4) **BERT**: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf) (Code: https://github.com/google-research/bert)    
 (5) **BioBERT**: [BioBERT: a pre-trained biomedical language representation model for biomedical text mining](https://arxiv.org/pdf/1901.08746v2.pdf)
 
+## Version
+(1) python 3.6
+(2) tensorflow-gpu 1.12.0
+(3) numpy 1.17.4  
+
 ## Operating Instructions
 (1) Run get_E_dict.py to get E_dict.json in **Annotation/**     
 ```
