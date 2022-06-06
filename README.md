@@ -41,7 +41,7 @@ Chaoyu Zhu, Zhihao Yang, Xiaoqiong Xia, Nan Li, Fan Zhong, Lei Liu, Multimodal r
 **bert_model.ckpt.index**  
 **bert_model.ckpt.meta**  
 **vocab.txt**  
-Self download from https://github.com/dmis-lab/biobert     
+Self download from https://github.com/dmis-lab/biobert (The name of the original file is biobert_..., and I changed it to bert_...)      
 
 ### Supplementary Table/  
 **Supplementary Table S1 (statistical analysis of entity prediction)**  
