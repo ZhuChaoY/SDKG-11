@@ -59,7 +59,7 @@ class BasicTokenizer():
         orig_tokens = whitespace_tokenize(text)
         split_tokens = []
         for token in orig_tokens:
-            token = self._run_strip_accents(token.lower())
+            #token = self._run_strip_accents(token.lower())
             split_tokens.extend(self._run_split_on_punc(token))
         return whitespace_tokenize(' '.join(split_tokens))
 
