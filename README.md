@@ -1,8 +1,5 @@
 # SDKG-11
-Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases
-
-## Paper Link
-https://academic.oup.com/bioinformatics/article/38/8/2235/6527626
+[Multimodal Reasoning based on Knowledge Graph Embedding for Specific Diseases] (https://academic.oup.com/bioinformatics/article/38/8/2235/6527626)  
 
 ## Cite By
 Chaoyu Zhu, Zhihao Yang, Xiaoqiong Xia, Nan Li, Fan Zhong, Lei Liu, Multimodal reasoning based on knowledge graph embedding for specific diseases, Bioinformatics, 2022, 38(8), 2235-2245. 
